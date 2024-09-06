@@ -6,11 +6,11 @@
     <title>Test - Medicoos</title>
 </head>
 <body>
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="https://mattplaygamez.github.io/medicoosPWA/manifest.json">
     <script>
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/service-worker.js')
+            navigator.serviceWorker.register("https://mattplaygamez.github.io/medicoosPWA/service_worker.js")
             .then(function(registration) {
               console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function(error) {
